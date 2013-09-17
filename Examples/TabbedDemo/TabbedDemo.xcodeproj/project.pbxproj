@@ -25,6 +25,8 @@
 		B28150DA17E685110009076D /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B28150D917E685110009076D /* second@2x.png */; };
 		B28150E317E686430009076D /* ForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28150E117E686430009076D /* ForumViewController.m */; };
 		B28150E617E688230009076D /* libGPLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B28150E517E688230009076D /* libGPLibrary.a */; };
+		B281515617E81D3D0009076D /* articleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B281515417E81D3C0009076D /* articleListCell.xib */; };
+		B281515717E81D3D0009076D /* TBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B281515517E81D3C0009076D /* TBViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +54,10 @@
 		B28150D917E685110009076D /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		B28150E017E686430009076D /* ForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumViewController.h; sourceTree = "<group>"; };
 		B28150E117E686430009076D /* ForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumViewController.m; sourceTree = "<group>"; };
-		B28150E517E688230009076D /* libGPLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libGPLibrary.a; path = "../../GPLibrary/build/Release-iphoneos/libGPLibrary.a"; sourceTree = "<group>"; };
+		B28150E517E688230009076D /* libGPLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGPLibrary.a; path = "../../GPLibrary/build/Release-iphoneos/libGPLibrary.a"; sourceTree = "<group>"; };
+		B281512917E80A920009076D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B281515417E81D3C0009076D /* articleListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = articleListCell.xib; path = ../../GPLibrary/GPLibrary/articleListCell.xib; sourceTree = "<group>"; };
+		B281515517E81D3C0009076D /* TBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = TBViewController.xib; path = ../../GPLibrary/GPLibrary/TBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				B28150E517E688230009076D /* libGPLibrary.a */,
+				B281515317E81D200009076D /* GPViews */,
 				B28150B817E685110009076D /* TabbedDemo */,
 				B28150B117E685110009076D /* Frameworks */,
 				B28150B017E685110009076D /* Products */,
@@ -94,6 +100,7 @@
 				B28150B217E685110009076D /* UIKit.framework */,
 				B28150B417E685110009076D /* Foundation.framework */,
 				B28150B617E685110009076D /* CoreGraphics.framework */,
+				B281512917E80A920009076D /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,6 +140,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B281515317E81D200009076D /* GPViews */ = {
+			isa = PBXGroup;
+			children = (
+				B281515417E81D3C0009076D /* articleListCell.xib */,
+				B281515517E81D3C0009076D /* TBViewController.xib */,
+			);
+			name = GPViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +159,7 @@
 				B28150AB17E685110009076D /* Sources */,
 				B28150AC17E685110009076D /* Frameworks */,
 				B28150AD17E685110009076D /* Resources */,
+				B281515217E8193A0009076D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,10 +210,28 @@
 				B28150D317E685110009076D /* first@2x.png in Resources */,
 				B28150D817E685110009076D /* second.png in Resources */,
 				B28150DA17E685110009076D /* second@2x.png in Resources */,
+				B281515617E81D3D0009076D /* articleListCell.xib in Resources */,
+				B281515717E81D3D0009076D /* TBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B281515217E8193A0009076D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -R -L -f $BUILT_PRODUCTS_DIR/GPResource.bundle $BUILT_PRODUCTS_DIR/$CONTENTS_FOLDER_PATH/";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B28150AB17E685110009076D /* Sources */ = {

@@ -15,6 +15,9 @@
 		B28150A517E608E40009076D /* ServerLink.m in Sources */ = {isa = PBXBuildFile; fileRef = B28150A417E608E40009076D /* ServerLink.m */; };
 		B28150E717E68ACA0009076D /* TBViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B281509C17E606F90009076D /* TBViewController.h */; };
 		B28150E817E68AD80009076D /* articleListCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B281509917E606F90009076D /* articleListCell.h */; };
+		B281513A17E80ACC0009076D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28150F917E74E3D0009076D /* CoreFoundation.framework */; };
+		B281514517E80B140009076D /* TBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B281509E17E606F90009076D /* TBViewController.xib */; };
+		B281514617E80B190009076D /* articleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B281509B17E606F90009076D /* articleListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +49,11 @@
 		B281509E17E606F90009076D /* TBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBViewController.xib; sourceTree = "<group>"; };
 		B28150A317E608E40009076D /* ServerLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerLink.h; sourceTree = "<group>"; };
 		B28150A417E608E40009076D /* ServerLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerLink.m; sourceTree = "<group>"; };
+		B28150F917E74E3D0009076D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B281513917E80ACC0009076D /* GPResource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPResource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B281513D17E80ACC0009076D /* GPResource-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPResource-Info.plist"; sourceTree = "<group>"; };
+		B281513F17E80ACC0009076D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B281514117E80ACC0009076D /* GPResource-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPResource-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B281513617E80ACC0009076D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B281513A17E80ACC0009076D /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +81,7 @@
 			children = (
 				B281509017E605D20009076D /* Controller */,
 				B281507B17E602E40009076D /* GPLibrary */,
+				B281513B17E80ACC0009076D /* GPResource */,
 				B281507817E602E40009076D /* Frameworks */,
 				B281507717E602E40009076D /* Products */,
 			);
@@ -74,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B281507617E602E40009076D /* libGPLibrary.a */,
+				B281513917E80ACC0009076D /* GPResource.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B281507917E602E40009076D /* Foundation.framework */,
+				B28150F917E74E3D0009076D /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +138,24 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		B281513B17E80ACC0009076D /* GPResource */ = {
+			isa = PBXGroup;
+			children = (
+				B281513C17E80ACC0009076D /* Supporting Files */,
+			);
+			path = GPResource;
+			sourceTree = "<group>";
+		};
+		B281513C17E80ACC0009076D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B281513D17E80ACC0009076D /* GPResource-Info.plist */,
+				B281513E17E80ACC0009076D /* InfoPlist.strings */,
+				B281514117E80ACC0009076D /* GPResource-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +175,23 @@
 			productName = GPLibrary;
 			productReference = B281507617E602E40009076D /* libGPLibrary.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		B281513817E80ACC0009076D /* GPResource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B281514217E80ACC0009076D /* Build configuration list for PBXNativeTarget "GPResource" */;
+			buildPhases = (
+				B281513517E80ACC0009076D /* Sources */,
+				B281513617E80ACC0009076D /* Frameworks */,
+				B281513717E80ACC0009076D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPResource;
+			productName = GPResource;
+			productReference = B281513917E80ACC0009076D /* GPResource.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -161,9 +215,22 @@
 			projectRoot = "";
 			targets = (
 				B281507517E602E40009076D /* GPLibrary */,
+				B281513817E80ACC0009076D /* GPResource */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B281513717E80ACC0009076D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B281514617E80B190009076D /* articleListCell.xib in Resources */,
+				B281514517E80B140009076D /* TBViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B281507217E602E40009076D /* Sources */ = {
@@ -177,7 +244,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B281513517E80ACC0009076D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B281513E17E80ACC0009076D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B281513F17E80ACC0009076D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B281508217E602E40009076D /* Debug */ = {
@@ -257,6 +342,49 @@
 			};
 			name = Release;
 		};
+		B281514317E80ACC0009076D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPResource/GPResource-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B281514417E80ACC0009076D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPResource/GPResource-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -277,6 +405,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B281514217E80ACC0009076D /* Build configuration list for PBXNativeTarget "GPResource" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B281514317E80ACC0009076D /* Debug */,
+				B281514417E80ACC0009076D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -23,6 +23,30 @@
 //    return self;
 //}
 
+- (void)loadView
+{
+    NSLog(@"loadView");
+//    NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"TBViewController" owner:self options:nil];
+    
+    
+    
+    
+    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"GPResource" withExtension:@"bundle"]];
+    NSLog(@"bundle: %@",bundle);
+    
+    
+//    NSBundle *bundle = [NSBundle bundleWithPath:@"GPResource2"];    
+    NSArray *views = [bundle loadNibNamed:@"TBViewController" owner:self options:nil];
+    self.view = [views objectAtIndex:0];
+}
+
+//- (id)init {
+//    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"GPResource" withExtension:@"bundle"]];
+//    if ((self = [super initWithNibName:@"TBViewController" bundle:bundle])) {
+//    }
+//    return self;
+//}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

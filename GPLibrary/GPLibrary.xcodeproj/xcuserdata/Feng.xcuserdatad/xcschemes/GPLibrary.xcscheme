@@ -20,6 +20,20 @@
                ReferencedContainer = "container:GPLibrary.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B281513817E80ACC0009076D"
+               BuildableName = "GPResource.bundle"
+               BlueprintName = "GPResource"
+               ReferencedContainer = "container:GPLibrary.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
