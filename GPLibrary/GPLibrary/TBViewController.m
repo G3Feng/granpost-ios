@@ -89,15 +89,15 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    // Front Page
-    NSLog(@"tableView = %@",tableView);
+//    NSLog(@"tableView = %@",tableView);
     
     NSString *CellIdentifier = @"articleListCell";
     articleListCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-//        NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"GPResource" withExtension:@"bundle"]];
-        //        NSArray* views = [bundle loadNibNamed:@"articleListCell" owner:nil options:nil];
-        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"articleListCell" owner:nil options:nil];
+        NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"GPResource" withExtension:@"bundle"]];
+        NSLog(@"|cell| load bundle:%@",bundle);
+        NSArray* views = [bundle loadNibNamed:@"articleListCell" owner:nil options:nil];
+//        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"articleListCell" owner:nil options:nil];
         
         for (UIView *view in views) {
             if([view isKindOfClass:[UITableViewCell class]]) {
