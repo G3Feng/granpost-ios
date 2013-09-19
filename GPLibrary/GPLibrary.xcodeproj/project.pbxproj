@@ -413,6 +413,7 @@
 				B281514417E80ACC0009076D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

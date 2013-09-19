@@ -24,6 +24,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    // warm trick, force linker to keep the whole class
+//    [articleListCell class];
+    
     [self loadArticleTable];
     
     [self buildUI];
@@ -96,6 +99,10 @@
     if (cell == nil) {
         NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"GPResource" withExtension:@"bundle"]];
         NSLog(@"|cell| load bundle:%@",bundle);
+        if(![bundle isLoaded]) {
+            [bundle load];
+            NSLog(@"bundle loaded.");
+        }
         NSArray* views = [bundle loadNibNamed:@"articleListCell" owner:nil options:nil];
 //        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"articleListCell" owner:nil options:nil];
         

@@ -6,6 +6,19 @@
 //  Copyright (c) 2013 GP. All rights reserved.
 //
 
+/*
+    
+     add the "-all_load -ObjC" flags to the "Other Linker Flags" key , to solve error "Unknown class articleListCell in Interface Builder file."
+ 
+ 
+ 
+ */
+ 
+
+
+
+
+
 #import "ForumViewController.h"
 
 @interface ForumViewController ()
@@ -40,6 +53,11 @@
     
     NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"GPResource" withExtension:@"bundle"]];
     NSLog(@"bundle: %@",bundle);
+    
+    if(![bundle isLoaded]) {
+        [bundle load];
+        NSLog(@"bundle loaded.");
+    }
     
     NSArray *views = [bundle loadNibNamed:@"TBViewController" owner:self options:nil];
     self.view = [views objectAtIndex:0];

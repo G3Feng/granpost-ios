@@ -54,8 +54,6 @@
 		B28150E117E686430009076D /* ForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumViewController.m; sourceTree = "<group>"; };
 		B28150E517E688230009076D /* libGPLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGPLibrary.a; path = "../../GPLibrary/build/Release-iphoneos/libGPLibrary.a"; sourceTree = "<group>"; };
 		B281512917E80A920009076D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		B281515417E81D3C0009076D /* articleListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = articleListCell.xib; path = ../../GPLibrary/GPLibrary/articleListCell.xib; sourceTree = "<group>"; };
-		B281515517E81D3C0009076D /* TBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TBViewController.xib; path = ../../GPLibrary/GPLibrary/TBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				B28150E517E688230009076D /* libGPLibrary.a */,
-				B281515317E81D200009076D /* GPViews */,
 				B28150B817E685110009076D /* TabbedDemo */,
 				B28150B117E685110009076D /* Frameworks */,
 				B28150B017E685110009076D /* Products */,
@@ -136,15 +133,6 @@
 				B28150C817E685110009076D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B281515317E81D200009076D /* GPViews */ = {
-			isa = PBXGroup;
-			children = (
-				B281515417E81D3C0009076D /* articleListCell.xib */,
-				B281515517E81D3C0009076D /* TBViewController.xib */,
-			);
-			name = GPViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +315,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabbedDemo/TabbedDemo-Prefix.pch";
 				INFOPLIST_FILE = "TabbedDemo/TabbedDemo-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				WRAPPER_EXTENSION = app;
@@ -340,6 +332,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabbedDemo/TabbedDemo-Prefix.pch";
 				INFOPLIST_FILE = "TabbedDemo/TabbedDemo-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				WRAPPER_EXTENSION = app;
