@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B216B98417EDCF7B00570925 /* libGPLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B216B98317EDCF7B00570925 /* libGPLibrary.a */; };
 		B28150B317E685110009076D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28150B217E685110009076D /* UIKit.framework */; };
 		B28150B517E685110009076D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28150B417E685110009076D /* Foundation.framework */; };
 		B28150B717E685110009076D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28150B617E685110009076D /* CoreGraphics.framework */; };
@@ -24,10 +25,10 @@
 		B28150D817E685110009076D /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B28150D717E685110009076D /* second.png */; };
 		B28150DA17E685110009076D /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B28150D917E685110009076D /* second@2x.png */; };
 		B28150E317E686430009076D /* ForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28150E117E686430009076D /* ForumViewController.m */; };
-		B28150E617E688230009076D /* libGPLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B28150E517E688230009076D /* libGPLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B216B98317EDCF7B00570925 /* libGPLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGPLibrary.a; path = libGPLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28150AF17E685110009076D /* TabbedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28150B217E685110009076D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B28150B417E685110009076D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -52,7 +53,6 @@
 		B28150D917E685110009076D /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		B28150E017E686430009076D /* ForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumViewController.h; sourceTree = "<group>"; };
 		B28150E117E686430009076D /* ForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumViewController.m; sourceTree = "<group>"; };
-		B28150E517E688230009076D /* libGPLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGPLibrary.a; path = "../../GPLibrary/build/Release-iphoneos/libGPLibrary.a"; sourceTree = "<group>"; };
 		B281512917E80A920009076D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B28150E617E688230009076D /* libGPLibrary.a in Frameworks */,
+				B216B98417EDCF7B00570925 /* libGPLibrary.a in Frameworks */,
 				B28150B317E685110009076D /* UIKit.framework in Frameworks */,
 				B28150B517E685110009076D /* Foundation.framework in Frameworks */,
 				B28150B717E685110009076D /* CoreGraphics.framework in Frameworks */,
@@ -74,7 +74,7 @@
 		B28150A617E685110009076D = {
 			isa = PBXGroup;
 			children = (
-				B28150E517E688230009076D /* libGPLibrary.a */,
+				B216B98317EDCF7B00570925 /* libGPLibrary.a */,
 				B28150B817E685110009076D /* TabbedDemo */,
 				B28150B117E685110009076D /* Frameworks */,
 				B28150B017E685110009076D /* Products */,

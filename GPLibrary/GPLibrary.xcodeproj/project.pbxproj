@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B216B97F17EDC89700570925 /* StyleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B216B97E17EDC89700570925 /* StyleManager.m */; };
+		B216B98017EDCD7700570925 /* StyleManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B216B97D17EDC89700570925 /* StyleManager.h */; };
 		B281507A17E602E40009076D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B281507917E602E40009076D /* Foundation.framework */; };
 		B281507F17E602E40009076D /* GPLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B281507E17E602E40009076D /* GPLibrary.h */; };
 		B281508117E602E40009076D /* GPLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B281508017E602E40009076D /* GPLibrary.m */; };
@@ -27,6 +29,7 @@
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
+				B216B98017EDCD7700570925 /* StyleManager.h in CopyFiles */,
 				B28150E817E68AD80009076D /* articleListCell.h in CopyFiles */,
 				B28150E717E68ACA0009076D /* TBViewController.h in CopyFiles */,
 				B281507F17E602E40009076D /* GPLibrary.h in CopyFiles */,
@@ -36,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B216B97D17EDC89700570925 /* StyleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleManager.h; sourceTree = "<group>"; };
+		B216B97E17EDC89700570925 /* StyleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleManager.m; sourceTree = "<group>"; };
 		B281507617E602E40009076D /* libGPLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGPLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B281507917E602E40009076D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B281507D17E602E40009076D /* GPLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPLibrary-Prefix.pch"; sourceTree = "<group>"; };
@@ -119,6 +124,8 @@
 				B281507E17E602E40009076D /* GPLibrary.h */,
 				B281508017E602E40009076D /* GPLibrary.m */,
 				B281507C17E602E40009076D /* Supporting Files */,
+				B216B97D17EDC89700570925 /* StyleManager.h */,
+				B216B97E17EDC89700570925 /* StyleManager.m */,
 			);
 			path = GPLibrary;
 			sourceTree = "<group>";
@@ -241,6 +248,7 @@
 				B281509F17E606F90009076D /* articleListCell.m in Sources */,
 				B28150A017E606F90009076D /* TBViewController.m in Sources */,
 				B28150A517E608E40009076D /* ServerLink.m in Sources */,
+				B216B97F17EDC89700570925 /* StyleManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

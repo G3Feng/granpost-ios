@@ -7,6 +7,7 @@
 //
 
 #import "articleListCell.h"
+#import "StyleManager.h"
 
 @implementation articleListCell
 
@@ -74,7 +75,15 @@
 //        self.scoreLabel.textColor = [[HNSingleton sharedHNSingleton].themeDict objectForKey:@"SubFont"];
 //        self.bottomBar.backgroundColor = [[HNSingleton sharedHNSingleton].themeDict objectForKey:@"BottomBar"];
 //        [self.commentTagButton setImage:[[HNSingleton sharedHNSingleton].themeDict objectForKey:@"CommentBubble"] forState:UIControlStateNormal];
-//        
+
+        self.titleLabel.textColor = [[StyleManager getTheme] objectForKey:@"MainFont"];
+        self.postedTimeLabel.textColor = [[StyleManager getTheme] objectForKey:@"SubFont"];
+        self.scoreLabel.textColor = [[StyleManager getTheme] objectForKey:@"SubFont"];
+        self.bottomBar.backgroundColor = [[StyleManager getTheme] objectForKey:@"BottomBar"];
+//        [self.commentTagButton setImage:[[StyleManager getTheme] objectForKey:@"CommentBubble"] forState:UIControlStateNormal];
+        
+        
+        
         // If it's been voted on
 //        if ([[HNSingleton sharedHNSingleton] objectIsInVoteDict:post]) {
 //            [self.scoreLabel setTextColor:kOrangeColor];

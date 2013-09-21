@@ -27,9 +27,10 @@
     // warm trick, force linker to keep the whole class
 //    [articleListCell class];
     
+    [self buildUI];
+    
     [self loadArticleTable];
     
-    [self buildUI];
 
     
 }
@@ -44,9 +45,27 @@
 
 -(void)buildUI
 {
-    NSLog(@"start buildUI ==>");
+    NSLog(@"start buildUI ...");
     articleTable.frame = CGRectMake(0, 0, articleTable.frame.size.width, articleTable.frame.size.height);
+
+    [StyleManager changeTheme];    
+    [self colorUI];
+}
+
+-(void)colorUI {
+    // Set Colors for all objects based on Theme
+    self.view.backgroundColor = [[StyleManager getTheme] objectForKey:@"CellBG"];
+//    NSLog(@"|colorUI| mode : %@",[[StyleManager getTheme] objectForKey:@"Mode"]);
+    articleTable.backgroundColor = [[StyleManager getTheme] objectForKey:@"CellBG"];
+    articleTable.separatorColor = [[StyleManager getTheme] objectForKey:@"Separator"];
     
+//    commentsTable.backgroundColor = [[HNSingleton sharedHNSingleton].themeDict objectForKey:@"CellBG"];
+//    underHeaderTriangle.backgroundColor = [[HNSingleton sharedHNSingleton].themeDict objectForKey:@"TableTriangle"];
+//    headerTriangle.color = [[HNSingleton sharedHNSingleton].themeDict objectForKey:@"TableTriangle"];
+//    [headerTriangle drawTriangleAtXPosition:self.view.frame.size.width/2];
+    
+    // Redraw View
+    [self.view setNeedsDisplay];
 }
 
 -(void)loadArticleTable
