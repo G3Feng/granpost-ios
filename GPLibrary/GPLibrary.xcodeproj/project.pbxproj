@@ -20,6 +20,9 @@
 		B281513A17E80ACC0009076D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28150F917E74E3D0009076D /* CoreFoundation.framework */; };
 		B281514517E80B140009076D /* TBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B281509E17E606F90009076D /* TBViewController.xib */; };
 		B281514617E80B190009076D /* articleListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B281509B17E606F90009076D /* articleListCell.xib */; };
+		B2BBBE7117EDF837001789C4 /* CommentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BBBE6F17EDF836001789C4 /* CommentsCell.m */; };
+		B2BBBE7217EDF850001789C4 /* CommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BBBE7017EDF837001789C4 /* CommentsCell.xib */; };
+		B2BBBE7617EDF947001789C4 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BBBE7517EDF947001789C4 /* Comment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +62,11 @@
 		B281513D17E80ACC0009076D /* GPResource-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPResource-Info.plist"; sourceTree = "<group>"; };
 		B281513F17E80ACC0009076D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B281514117E80ACC0009076D /* GPResource-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPResource-Prefix.pch"; sourceTree = "<group>"; };
+		B2BBBE6E17EDF836001789C4 /* CommentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsCell.h; sourceTree = "<group>"; };
+		B2BBBE6F17EDF836001789C4 /* CommentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsCell.m; sourceTree = "<group>"; };
+		B2BBBE7017EDF837001789C4 /* CommentsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentsCell.xib; sourceTree = "<group>"; };
+		B2BBBE7417EDF947001789C4 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = Model/Comment.h; sourceTree = "<group>"; };
+		B2BBBE7517EDF947001789C4 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = Model/Comment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 		B281506D17E602E40009076D = {
 			isa = PBXGroup;
 			children = (
+				B2BBBE7317EDF8B7001789C4 /* Model */,
 				B281509017E605D20009076D /* Controller */,
 				B281507B17E602E40009076D /* GPLibrary */,
 				B281513B17E80ACC0009076D /* GPResource */,
@@ -113,6 +122,11 @@
 		B281507B17E602E40009076D /* GPLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				B2BBBE7417EDF947001789C4 /* Comment.h */,
+				B2BBBE7517EDF947001789C4 /* Comment.m */,
+				B2BBBE6E17EDF836001789C4 /* CommentsCell.h */,
+				B2BBBE6F17EDF836001789C4 /* CommentsCell.m */,
+				B2BBBE7017EDF837001789C4 /* CommentsCell.xib */,
 				B28150A317E608E40009076D /* ServerLink.h */,
 				B28150A417E608E40009076D /* ServerLink.m */,
 				B281509917E606F90009076D /* articleListCell.h */,
@@ -161,6 +175,13 @@
 				B281514117E80ACC0009076D /* GPResource-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2BBBE7317EDF8B7001789C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +255,7 @@
 			files = (
 				B281514617E80B190009076D /* articleListCell.xib in Resources */,
 				B281514517E80B140009076D /* TBViewController.xib in Resources */,
+				B2BBBE7217EDF850001789C4 /* CommentsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +271,8 @@
 				B28150A017E606F90009076D /* TBViewController.m in Sources */,
 				B28150A517E608E40009076D /* ServerLink.m in Sources */,
 				B216B97F17EDC89700570925 /* StyleManager.m in Sources */,
+				B2BBBE7117EDF837001789C4 /* CommentsCell.m in Sources */,
+				B2BBBE7617EDF947001789C4 /* Comment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

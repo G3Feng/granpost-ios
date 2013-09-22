@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#define kPad 10
+
 @interface StyleManager : NSObject
 
 +(void)changeTheme;

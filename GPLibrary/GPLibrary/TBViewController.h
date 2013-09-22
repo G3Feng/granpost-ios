@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "articleListCell.h"
-#import "StyleManager.h"
 
-@interface TBViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,UIWebViewDelegate,UIScrollViewDelegate,UIGestureRecognizerDelegate>
-//@property (weak, nonatomic) IBOutlet UITableView *articleTable;
+//@interface TBViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,UIWebViewDelegate,UIScrollViewDelegate,UIGestureRecognizerDelegate>
+@interface TBViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,UIScrollViewDelegate>
 
 @end
