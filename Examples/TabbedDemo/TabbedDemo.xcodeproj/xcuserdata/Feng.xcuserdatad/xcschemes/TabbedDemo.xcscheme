@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "25160D1514564E810060A5C5"
+               BuildableName = "libRestKit.a"
+               BlueprintName = "RestKit"
+               ReferencedContainer = "container:../../RestKit/RestKit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "B281507517E602E40009076D"
                BuildableName = "libGPLibrary.a"
                BlueprintName = "GPLibrary"

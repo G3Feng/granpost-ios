@@ -25,10 +25,16 @@
 		B28150D817E685110009076D /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B28150D717E685110009076D /* second.png */; };
 		B28150DA17E685110009076D /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B28150D917E685110009076D /* second@2x.png */; };
 		B28150E317E686430009076D /* ForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28150E117E686430009076D /* ForumViewController.m */; };
+		B2FC159417F5D2F100259987 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FC159317F5D2F100259987 /* libRestKit.a */; };
+		B2FC159617F5D3AF00259987 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FC159517F5D3AF00259987 /* CFNetwork.framework */; };
+		B2FC159817F5D3B800259987 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FC159717F5D3B800259987 /* MobileCoreServices.framework */; };
+		B2FC159A17F5D3C000259987 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FC159917F5D3C000259987 /* Security.framework */; };
+		B2FC159C17F5D3C800259987 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FC159B17F5D3C800259987 /* SystemConfiguration.framework */; };
+		B2FC159E17F5D3ED00259987 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FC159D17F5D3ED00259987 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B216B98317EDCF7B00570925 /* libGPLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGPLibrary.a; path = libGPLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B216B98317EDCF7B00570925 /* libGPLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGPLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28150AF17E685110009076D /* TabbedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28150B217E685110009076D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B28150B417E685110009076D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,6 +60,12 @@
 		B28150E017E686430009076D /* ForumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumViewController.h; sourceTree = "<group>"; };
 		B28150E117E686430009076D /* ForumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumViewController.m; sourceTree = "<group>"; };
 		B281512917E80A920009076D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B2FC159317F5D2F100259987 /* libRestKit.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libRestKit.a; path = "../../RestKit/Build/Products/Debug-iphoneos/libRestKit.a"; sourceTree = "<group>"; };
+		B2FC159517F5D3AF00259987 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B2FC159717F5D3B800259987 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B2FC159917F5D3C000259987 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B2FC159B17F5D3C800259987 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B2FC159D17F5D3ED00259987 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FC159E17F5D3ED00259987 /* CoreData.framework in Frameworks */,
+				B2FC159C17F5D3C800259987 /* SystemConfiguration.framework in Frameworks */,
+				B2FC159A17F5D3C000259987 /* Security.framework in Frameworks */,
+				B2FC159817F5D3B800259987 /* MobileCoreServices.framework in Frameworks */,
+				B2FC159617F5D3AF00259987 /* CFNetwork.framework in Frameworks */,
+				B2FC159417F5D2F100259987 /* libRestKit.a in Frameworks */,
 				B216B98417EDCF7B00570925 /* libGPLibrary.a in Frameworks */,
 				B28150B317E685110009076D /* UIKit.framework in Frameworks */,
 				B28150B517E685110009076D /* Foundation.framework in Frameworks */,
@@ -92,6 +110,12 @@
 		B28150B117E685110009076D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2FC159D17F5D3ED00259987 /* CoreData.framework */,
+				B2FC159B17F5D3C800259987 /* SystemConfiguration.framework */,
+				B2FC159917F5D3C000259987 /* Security.framework */,
+				B2FC159717F5D3B800259987 /* MobileCoreServices.framework */,
+				B2FC159517F5D3AF00259987 /* CFNetwork.framework */,
+				B2FC159317F5D2F100259987 /* libRestKit.a */,
 				B28150B217E685110009076D /* UIKit.framework */,
 				B28150B417E685110009076D /* Foundation.framework */,
 				B28150B617E685110009076D /* CoreGraphics.framework */,
@@ -314,6 +338,11 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabbedDemo/TabbedDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "TabbedDemo/TabbedDemo-Info.plist";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -331,6 +360,11 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TabbedDemo/TabbedDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "TabbedDemo/TabbedDemo-Info.plist";
 				OTHER_LDFLAGS = (
 					"-all_load",

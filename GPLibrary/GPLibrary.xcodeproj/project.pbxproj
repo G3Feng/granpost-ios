@@ -23,7 +23,39 @@
 		B2BBBE7117EDF837001789C4 /* CommentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BBBE6F17EDF836001789C4 /* CommentsCell.m */; };
 		B2BBBE7217EDF850001789C4 /* CommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BBBE7017EDF837001789C4 /* CommentsCell.xib */; };
 		B2BBBE7617EDF947001789C4 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BBBE7517EDF947001789C4 /* Comment.m */; };
+		B2FC159217F5D15600259987 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FC159117F5D15600259987 /* Article.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2D750B217F5CF8A0087A490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D750AB17F5CF890087A490 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		B2D750B417F5CF8A0087A490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D750AB17F5CF890087A490 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		B2D750B617F5CF8A0087A490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D750AB17F5CF890087A490 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		B2D750B817F5CF8A0087A490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D750AB17F5CF890087A490 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B281507417E602E40009076D /* CopyFiles */ = {
@@ -67,6 +99,13 @@
 		B2BBBE7017EDF837001789C4 /* CommentsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentsCell.xib; sourceTree = "<group>"; };
 		B2BBBE7417EDF947001789C4 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = Model/Comment.h; sourceTree = "<group>"; };
 		B2BBBE7517EDF947001789C4 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = Model/Comment.m; sourceTree = "<group>"; };
+		B2D750AB17F5CF890087A490 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = ../RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		B2FC158817F5D09600259987 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B2FC158A17F5D09D00259987 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B2FC158C17F5D0A300259987 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B2FC158E17F5D0AA00259987 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B2FC159017F5D15600259987 /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Article.h; path = GPLibrary/Model/Article.h; sourceTree = "<group>"; };
+		B2FC159117F5D15600259987 /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Article.m; path = GPLibrary/Model/Article.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +131,7 @@
 		B281506D17E602E40009076D = {
 			isa = PBXGroup;
 			children = (
+				B2D750AB17F5CF890087A490 /* RestKit.xcodeproj */,
 				B2BBBE7317EDF8B7001789C4 /* Model */,
 				B281509017E605D20009076D /* Controller */,
 				B281507B17E602E40009076D /* GPLibrary */,
@@ -113,6 +153,10 @@
 		B281507817E602E40009076D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2FC158E17F5D0AA00259987 /* SystemConfiguration.framework */,
+				B2FC158C17F5D0A300259987 /* Security.framework */,
+				B2FC158A17F5D09D00259987 /* MobileCoreServices.framework */,
+				B2FC158817F5D09600259987 /* CFNetwork.framework */,
 				B281507917E602E40009076D /* Foundation.framework */,
 				B28150F917E74E3D0009076D /* CoreFoundation.framework */,
 			);
@@ -180,8 +224,21 @@
 		B2BBBE7317EDF8B7001789C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2FC159017F5D15600259987 /* Article.h */,
+				B2FC159117F5D15600259987 /* Article.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		B2D750AC17F5CF890087A490 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2D750B317F5CF8A0087A490 /* libRestKit.a */,
+				B2D750B517F5CF8A0087A490 /* RestKitTests.octest */,
+				B2D750B717F5CF8A0087A490 /* RestKit.framework */,
+				B2D750B917F5CF8A0087A490 /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +297,12 @@
 			mainGroup = B281506D17E602E40009076D;
 			productRefGroup = B281507717E602E40009076D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B2D750AC17F5CF890087A490 /* Products */;
+					ProjectRef = B2D750AB17F5CF890087A490 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B281507517E602E40009076D /* GPLibrary */,
@@ -247,6 +310,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B2D750B317F5CF8A0087A490 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = B2D750B217F5CF8A0087A490 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2D750B517F5CF8A0087A490 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = B2D750B417F5CF8A0087A490 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2D750B717F5CF8A0087A490 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = B2D750B617F5CF8A0087A490 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B2D750B917F5CF8A0087A490 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = B2D750B817F5CF8A0087A490 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B281513717E80ACC0009076D /* Resources */ = {
@@ -266,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FC159217F5D15600259987 /* Article.m in Sources */,
 				B281508117E602E40009076D /* GPLibrary.m in Sources */,
 				B281509F17E606F90009076D /* articleListCell.m in Sources */,
 				B28150A017E606F90009076D /* TBViewController.m in Sources */,
@@ -356,7 +451,11 @@
 				DSTROOT = /tmp/GPLibrary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPLibrary/GPLibrary-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -368,7 +467,11 @@
 				DSTROOT = /tmp/GPLibrary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPLibrary/GPLibrary-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
